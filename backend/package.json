@@ -4,6 +4,9 @@
   "private": true,
   "description": "Welcome Darjeeling - trip expense tracker API",
   "main": "dist/server.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc -p tsconfig.json",
