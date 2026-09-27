@@ -67,7 +67,7 @@ export function PeoplePage() {
   }
 
   async function handleTreasurerChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    if (!trip || !member.isOwner || !e.target.value) return;
+    if (!trip || !member || !member.isOwner || !e.target.value) return;
     const { trip: updated } = await setTreasurer(trip.id, e.target.value);
     setTrip({ ...trip, treasurerId: updated.treasurerId });
   }
