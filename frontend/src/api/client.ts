@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'https://tour-eta-sable.vercel.app';
+const API_URL = import.meta.env.VITE_API_URL || 'https://tour-eta-sable.vercel.app/api';
 
 export class ApiError extends Error {
   status: number;
